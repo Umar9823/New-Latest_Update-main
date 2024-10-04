@@ -85,7 +85,15 @@ const App = () => {
           <Route path="/signup" element={<AuthForm />} />
           <Route path="/signin" element={<SigninForm />} />
           {/* Conditionally render Normalcls route based on authentication */}
-          <Route path="/normalclass" element={<ProtectedRoute element={<Normalcls />} />} />
+          {/* <Route path="/normalclass" element={<ProtectedRoute element={<Normalcls />} />} /> */}
+          <Route 
+            path="/normalclass" 
+            element={
+              <ProtectedRoute>
+                <Normalcls />
+              </ProtectedRoute>
+            } 
+          />
         </Routes>
       </Router>
     </AuthProvider>
