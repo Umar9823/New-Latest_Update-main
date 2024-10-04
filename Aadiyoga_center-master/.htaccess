@@ -1,0 +1,12 @@
+# Redirect all requests to index.html except for existing files and folders
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # If the requested file or folder doesn't exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Redirect to index.html
+  RewriteRule . /index.html [L]
+</IfModule>
