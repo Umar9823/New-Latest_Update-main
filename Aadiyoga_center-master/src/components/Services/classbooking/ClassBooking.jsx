@@ -453,7 +453,7 @@ function BookingModal({ onClose, handleSubmit, showQRCode, handlePaymentConfirma
             <h2>Complete Payment</h2>
             <p>Scan the QR code below to complete the payment:</p>
             <div className="qrimg">
-            <img id="qrcode" src="/src/assets/img/qrcode/QRCode.png" alt="UPI QR Code" />
+            <img id="qrcode" src="/src/assets/img/qrcode/QRCode.jpeg" alt="UPI QR Code" />
             </div>
             <label htmlFor="paymentReceipt">Upload Payment Receipt:</label>
             <input type="file" id="paymentReceipt" name="paymentReceipt" accept="image/*" required />
