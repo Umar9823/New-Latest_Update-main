@@ -147,10 +147,25 @@ select {
 }
 
 .qrimg img {
-  width: 150px;
-  height: 150px;
+  margin-bottom: 10px;
+  width: 249px;
+  height: 352px;
+  margin-top: 10px;
 }
 
 #qrcode-container{
   margin-top: 10px;
+}
+
+.loading-spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  width: 100vw; /* Full screen width */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional background overlay */
+  position: fixed; /* Ensure it stays on top of other elements */
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it's on top of other content */
 }
